@@ -2,7 +2,7 @@ window.onload = function() {
     getEvent();
 };
 
-const url = "http://openapi.seoul.go.kr:8088/4259796a4a72616c3837437a4c6274/json/culturalEventInfo/1/100/";
+const url = "https://cors-anywhere-49h7.onrender.com/" + "http://openapi.seoul.go.kr:8088/4259796a4a72616c3837437a4c6274/json/culturalEventInfo/1/100/";
 
 let dataDiv = document.getElementById("dataDiv");
 let watchButton = document.getElementById("what");
@@ -40,4 +40,5 @@ async function getEvent() {
 
 watchButton.addEventListener("click", () => {
     getEvent()
+
 })
